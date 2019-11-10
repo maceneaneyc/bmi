@@ -63,5 +63,34 @@ namespace BMIUnitTestProject
             //Assert
             Assert.AreEqual(actualResult, expectedResult);
         }
+
+        [TestMethod]
+        public void TestBMIMetricWeightMethod()
+        {
+            //Arrange
+            BMI bmi = new BMI() { WeightStones = 10, WeightPounds = 6, HeightFeet = 5, HeightInches = 7 };
+            double expectedResult = 66.224432;
+
+            //Act
+            double actualResult = bmi.BMIWeightMetric;
+
+            //Assert
+            Assert.AreEqual(actualResult, expectedResult);
+        }
+
+        [TestMethod]
+        public void TestBMIMetricHeightMethod()
+        {
+            //Arrange
+            BMI bmi = new BMI() { WeightStones = 10, WeightPounds = 6, HeightFeet = 5, HeightInches = 7 };
+            double expectedResult = 1.7018;
+
+            //Act
+            double actualResult = bmi.BMIHeightMetric;
+
+            //Assert
+            Assert.AreEqual(actualResult, expectedResult);
+        }
+
     }
 }
