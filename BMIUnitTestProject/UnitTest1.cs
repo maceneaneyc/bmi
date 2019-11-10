@@ -1,9 +1,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BMICalculator;
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace BMIUnitTestProject
 {
+    [ExcludeFromCodeCoverage]
     [TestClass]
     public class UnitTestBMICategory
     {
